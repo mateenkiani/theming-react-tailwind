@@ -14,6 +14,7 @@ function Layout({ children }: Props) {
       const storedTheme = localStorage.getItem('theme');
       if (theme !== storedTheme) toggleTheme();
     }
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [typeof window]);
 
   return (

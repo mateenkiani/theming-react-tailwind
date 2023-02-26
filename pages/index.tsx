@@ -1,7 +1,7 @@
 import Layout from 'components/Layout';
 
-const cards = [...Array(10).keys()].map((_) => (
-  <div className="flex w-[500px] p-5">
+const cards = [...Array(10).keys()].map((_, i) => (
+  <div className="flex w-[500px] p-5" key={i}>
     <div className="bg-background dark:bg-dark-background rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
       <div>
         <span className="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
