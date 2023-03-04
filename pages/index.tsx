@@ -1,6 +1,6 @@
 import Layout from 'components/Layout';
 
-const cards = [...Array(10).keys()].map((_, i) => (
+const cards = [...Array(15).keys()].map((_, i) => (
   <div className="w-full p-5" key={i}>
     <div className="bg-background dark:bg-dark-background rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
       <div>
@@ -29,7 +29,7 @@ const cards = [...Array(10).keys()].map((_, i) => (
 export default function Home() {
   return (
     <Layout>
-      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
+      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4 ">
         {cards.map((card) => card)}
       </div>
     </Layout>
