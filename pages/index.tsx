@@ -1,7 +1,7 @@
 import Layout from 'components/Layout';
 
 const cards = [...Array(10).keys()].map((_, i) => (
-  <div className="flex w-[500px] p-5" key={i}>
+  <div className="w-full p-5" key={i}>
     <div className="bg-background dark:bg-dark-background rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
       <div>
         <span className="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
@@ -29,7 +29,7 @@ const cards = [...Array(10).keys()].map((_, i) => (
 export default function Home() {
   return (
     <Layout>
-      <div className="grid gap-4 grid-cols-3 grid-rows-3">
+      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
         {cards.map((card) => card)}
       </div>
     </Layout>
