@@ -31,10 +31,6 @@ export default function Home() {
     <Layout>
       <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
         {cards.map((card) => card)}
-
-        <div>01</div>
-  <div>02</div>
-  <div>03</div>
       </div>
     </Layout>
   );
